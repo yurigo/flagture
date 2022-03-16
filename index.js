@@ -8,10 +8,10 @@ const port = 3000
 app.get('/api/', async (req, res) => {
   // let user = req.query.user;
   // let app = req.query.app;
-
   let { user, app } = req.query;
 
   const connection = await mysql.createConnection(process.env.DATABASE_URL);
+  const hola = "hola"
 
   try {
     // QUERY!
